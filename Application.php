@@ -2,7 +2,7 @@
     //use general namespace
     namespace nisett\phpmvc;
 
-use app\models\User;
+use nisett\phpmvc\models\User;
 use nisett\phpmvc\db\Database;
 use nisett\phpmvc\db\DbModel;
 
@@ -12,6 +12,11 @@ use nisett\phpmvc\db\DbModel;
 
     //class that include all logic application
     class Application {
+        const EVENT_BEFORE_REQUEST = 'beforeRequest';
+        const EVENT_AFTER_REQUEST = 'afterRequest';
+
+        protected array $eventListeners = [];
+
         //var user class
         public string $userClass;
         //var layout
@@ -78,6 +83,7 @@ use nisett\phpmvc\db\DbModel;
 
         //function run app
         public function run() {
+            $this->triggerEvent(self::EVENT_BEFORE_REQUEST);
             try {
                 echo $this->router->resolve();
             } catch (\Exception $e) {
@@ -117,6 +123,17 @@ use nisett\phpmvc\db\DbModel;
 
         public static function isGuest () {
             return !self::$app->user;
+        }
+
+        public function triggerEvent($eventName) {
+            $callbacks = $this->eventListeners[$eventName] ?? [];
+            foreach ($callbacks as $callback) {
+                call_user_func($callback);
+            }
+        }
+
+        public function on ($eventName, $callback) {
+            $this->eventListeners[$eventName][] = $callback;
         }
     }
 ?>
