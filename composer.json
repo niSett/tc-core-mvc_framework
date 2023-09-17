@@ -1,5 +1,5 @@
 {
-    "name": "sett/php-mvc-core",
+    "name": "nisett/php-mvc-core",
     "autoload": {
         "psr-4": {
             "Sett\\PhpMvcCore\\": "src/"
