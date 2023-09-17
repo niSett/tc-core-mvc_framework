@@ -1,8 +1,8 @@
 <?php 
-    namespace app\core;
+    namespace nisett\phpmvc;
 
     /**
-     * @package app\core
+     * @package nisett\phpmvc
      */
 
     abstract class Model {

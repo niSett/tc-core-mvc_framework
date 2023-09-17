@@ -1,9 +1,9 @@
 <?php 
 
-namespace app\core\exception;
+namespace nisett\phpmvc\exception;
 
 /**
- * @package app\core\exception;
+ * @package nisett\phpmvc\exception;
  */
 
 class ForbiddenException extends \Exception{

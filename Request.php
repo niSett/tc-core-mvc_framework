@@ -1,5 +1,5 @@
 <?php
-    namespace app\core;
+    namespace nisett\phpmvc;
 
     class Request {
         public function getPath () {

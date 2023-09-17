@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\middlewares;
+namespace nisett\phpmvc\middlewares;
 
-use app\core\Application;
-use app\core\exception\ForbiddenException;
+use nisett\phpmvc\Application;
+use nisett\phpmvc\exception\ForbiddenException;
 
 /**
- * @package app\core\middlewares
+ * @package nisett\phpmvc\middlewares
  */
 
 class AuthMiddleware extends BaseMiddleware {

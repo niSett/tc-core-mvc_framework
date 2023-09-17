@@ -1,13 +1,13 @@
 <?php 
     //use general namespace
-    namespace app\core;
+    namespace nisett\phpmvc;
 
 use app\models\User;
-use app\core\db\Database;
-use app\core\db\DbModel;
+use nisett\phpmvc\db\Database;
+use nisett\phpmvc\db\DbModel;
 
     /**
-     * @package app\core;
+     * @package nisett\phpmvc;
      */
 
     //class that include all logic application
@@ -90,15 +90,15 @@ use app\core\db\DbModel;
         }
 
         /**
-         * @return \app\core\Controller
+         * @return \nisett\phpmvc\Controller
          */
-        public function getController(): \app\core\Controller {
+        public function getController(): \nisett\phpmvc\Controller {
             return $this->controller;
         }
         /**
-         * @return \app\core\Controller $controller
+         * @return \nisett\phpmvc\Controller $controller
          */
-        public function setController(\app\core\Controller $controller): void {
+        public function setController(\nisett\phpmvc\Controller $controller): void {
             $this->controller = $controller;
         }
 

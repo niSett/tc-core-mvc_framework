@@ -1,11 +1,11 @@
 <?php
-namespace app\core;
+namespace nisett\phpmvc;
 
-use app\core\Application;
-use app\core\middlewares\BaseMiddleware;
+use nisett\phpmvc\Application;
+use nisett\phpmvc\middlewares\BaseMiddleware;
 
     /**
-     * @package app\core
+     * @package nisett\phpmvc
      */
 
     class Controller {
@@ -13,7 +13,7 @@ use app\core\middlewares\BaseMiddleware;
         public string $action = '';
 
         /**
-         * @var \app\core\middlewares\BaseMiddleware[]
+         * @var \nisett\phpmvc\middlewares\BaseMiddleware[]
          */
         protected array $middlewares = [];
 
@@ -30,7 +30,7 @@ use app\core\middlewares\BaseMiddleware;
         }
 
         /**
-         * @return \app\core\middlewares\BaseMiddleware[]
+         * @return \nisett\phpmvc\middlewares\BaseMiddleware[]
          */
         public function getMiddlewares(): array {
             return $this->middlewares;

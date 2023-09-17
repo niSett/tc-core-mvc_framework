@@ -1,11 +1,11 @@
 <?php
 
-namespace app\core;
+namespace nisett\phpmvc;
 
-use app\core\db\DbModel;
+use nisett\phpmvc\db\DbModel;
 
 /**
- * @package app\core
+ * @package nisett\phpmvc
  */
 abstract class UserModel extends DbModel {
     abstract public function getDisplayName(): string;

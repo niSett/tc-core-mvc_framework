@@ -1,9 +1,9 @@
 <?php 
 
-namespace app\core\form;
+namespace nisett\phpmvc\form;
 
 /**
- * @package app\core\form
+ * @package nisett\phpmvc\form
  */
 
 class TextareaField extends BaseField {

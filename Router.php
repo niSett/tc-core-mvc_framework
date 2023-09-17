@@ -1,15 +1,15 @@
 <?php 
     //use general namespace
-    namespace app\core;
+    namespace nisett\phpmvc;
 
-use app\core\exception\ForbiddenException;
-use app\core\exception\NotFoundException;
+use nisett\phpmvc\exception\ForbiddenException;
+use nisett\phpmvc\exception\NotFoundException;
 
     /**
-     * @package app\core
+     * @package nisett\phpmvc
      * 
-     * @param app\core\Request $request
-     * @param app\core\Response $response
+     * @param nisett\phpmvc\Request $request
+     * @param nisett\phpmvc\Response $response
      */
 
     //class that include all routes
@@ -49,7 +49,7 @@ use app\core\exception\NotFoundException;
                 return Application::$app->view->renderView($callback);
             }
             if(is_array($callback)) {
-                /** @var \app\core\Controller $controller */
+                /** @var \nisett\phpmvc\Controller $controller */
                 $controller = new $callback[0]();
                 Application::$app->controller = $controller;
                 $controller->action = $callback[1];

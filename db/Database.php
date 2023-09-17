@@ -1,12 +1,12 @@
 <?php
 
-namespace app\core\db;
+namespace nisett\phpmvc\db;
 
-use app\core\Application;
+use nisett\phpmvc\Application;
 
 /**
  * 
- * @package app\core
+ * @package nisett\phpmvc
  * 
  */
 

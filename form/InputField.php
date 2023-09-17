@@ -1,14 +1,14 @@
 <?php 
 
-    namespace app\core\form;
+    namespace nisett\phpmvc\form;
 
-    use app\core\Model;
+    use nisett\phpmvc\Model;
 use Attribute;
 
     /**
-     * @package app\core\form
+     * @package nisett\phpmvc\form
      * 
-     * @param \app\core\Model $model
+     * @param \nisett\phpmvc\Model $model
      * @param string $attribute
      */
 

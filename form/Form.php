@@ -1,11 +1,11 @@
 <?php
 
-    namespace app\core\form;
+    namespace nisett\phpmvc\form;
 
-    use app\core\Model;
+    use nisett\phpmvc\Model;
 
     /**
-     * @package app\core\form
+     * @package nisett\phpmvc\form
      */
 
     class Form {

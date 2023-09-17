@@ -1,9 +1,9 @@
 <?php 
 
-namespace app\core\db;
+namespace nisett\phpmvc\db;
 
-use app\core\Model;
-use app\core\Application;
+use nisett\phpmvc\Model;
+use nisett\phpmvc\Application;
 
 abstract class DbModel extends Model {
 
