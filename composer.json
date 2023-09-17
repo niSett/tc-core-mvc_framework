@@ -1,0 +1,15 @@
+{
+    "name": "sett/php-mvc-core",
+    "autoload": {
+        "psr-4": {
+            "Sett\\PhpMvcCore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nSett",
+            "email": "nsett@gmail.com"
+        }
+    ],
+    "require": {}
+}
